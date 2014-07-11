@@ -31,7 +31,7 @@ or download the css on github and include in your project.
 .crs-outset { column-rule-style: outset; }
 .crs-i {      column-rule-style: inherit; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .crs-n-ns {      column-rule-style: none; }
   .crs-hid-ns {    column-rule-style: hidden; }
   .crs-dot-ns {    column-rule-style: dotted; }
@@ -45,7 +45,7 @@ or download the css on github and include in your project.
   .crs-i-ns {      column-rule-style: inherit; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .crs-n-m {      column-rule-style: none; }
   .crs-hid-m {    column-rule-style: hidden; }
   .crs-dot-m {    column-rule-style: dotted; }
@@ -59,7 +59,7 @@ or download the css on github and include in your project.
   .crs-i-m {      column-rule-style: inherit; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .crs-n-l {      column-rule-style: none; }
   .crs-hid-l {    column-rule-style: hidden; }
   .crs-dot-l {    column-rule-style: dotted; }
