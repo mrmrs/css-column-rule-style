@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-column-rule-style)
 ## File Size
 
 2.1K column-rule-style.css
-1.7K column-rule-style.min.css
+1.7K column-rule-style.min.css 
+301B minified and gzipped
 
 ## The Code
 ```
