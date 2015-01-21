@@ -20,7 +20,7 @@ View on [npm](https://www.npmjs.org/package/css-column-rule-style)
 ## File Size
 
 2.1K column-rule-style.css
-1.7K column-rule-style.min.css 
+1.7K column-rule-style.min.css
 301B minified and gzipped
 
 ## The Code
@@ -90,7 +90,7 @@ View on [npm](https://www.npmjs.org/package/css-column-rule-style)
 
 The MIT License (MIT)
 
-Copyright (c) 2014 @mrmrs
+Copyright (c) 2015 @mrmrs
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
