@@ -1,7 +1,7 @@
 {
   "name": "css-column-rule-style",
   "style": "column-rule-style.css",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "homepage": "http://github.com/mrmrs/css-column-rule-style",
   "description": "Css module of single purpose classes for column rule style",
   "keywords": [
@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.0.2"
+    "tachyons-cli": "^1.0.4"
   },
   "scripts": {
     "start": "tachyons src/css-column-rule-style.css > css/css-column-rule-style.css && tachyons src/css-column-rule-style.css --minify > css/css-column-rule-style.min.css && tachyons src/css-column-rule-style.css --generate-docs --package=../../package.json > readme.md"
