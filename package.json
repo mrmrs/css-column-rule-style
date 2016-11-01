@@ -1,7 +1,7 @@
 {
   "name": "css-column-rule-style",
   "style": "column-rule-style.css",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "homepage": "http://github.com/mrmrs/css-column-rule-style",
   "description": "Css module of single purpose classes for column rule style",
   "keywords": [
