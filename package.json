@@ -1,38 +1,44 @@
 {
   "name": "css-column-rule-style",
-  "style": "column-rule-style.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-column-rule-style",
-  "description": "Css module of single purpose classes for column rule style",
+  "version": "2.0.0",
+  "description": "Functional CSS for column-rule-style",
+  "style": "dist/column-rule-style.css",
+  "main": "dist/column-rule-style.css",
+  "exports": {
+    ".": "./dist/column-rule-style.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "column-rule-style"
+    "column-rule-style",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-column-rule-style": {
+  "homepage": "https://github.com/mrmrs/css-column-rule-style",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-column-rule-style.git"
+    "url": "https://github.com/mrmrs/css-column-rule-style.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-column-rule-style/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-column-rule-style/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
