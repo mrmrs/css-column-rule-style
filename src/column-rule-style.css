@@ -14,7 +14,7 @@
 .crs-outset { column-rule-style: outset; }
 .crs-i {      column-rule-style: inherit; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .crs-n-s {      column-rule-style: none; }
   .crs-hid-s {    column-rule-style: hidden; }
   .crs-dot-s {    column-rule-style: dotted; }
@@ -28,7 +28,7 @@
   .crs-i-s {      column-rule-style: inherit; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .crs-n-m {      column-rule-style: none; }
   .crs-hid-m {    column-rule-style: hidden; }
   .crs-dot-m {    column-rule-style: dotted; }
@@ -42,7 +42,7 @@
   .crs-i-m {      column-rule-style: inherit; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .crs-n-l {      column-rule-style: none; }
   .crs-hid-l {    column-rule-style: hidden; }
   .crs-dot-l {    column-rule-style: dotted; }
