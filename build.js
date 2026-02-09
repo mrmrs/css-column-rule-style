@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { transform } = require('lightningcss');
 
-const srcFile = path.join(__dirname, 'src', 'css-column-rule-style.css');
+const srcFile = path.join(__dirname, 'src', 'column-rule-style.css');
 const distDir = path.join(__dirname, 'dist');
 
 // Read source
@@ -15,22 +15,22 @@ if (!fs.existsSync(distDir)) {
 
 // Unminified — just normalize formatting
 const { code: unminified } = transform({
-  filename: 'css-column-rule-style.css',
+  filename: 'column-rule-style.css',
   code: Buffer.from(source),
   minify: false,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-column-rule-style.css'), unminified);
+fs.writeFileSync(path.join(distDir, 'column-rule-style.css'), unminified);
 
 // Minified
 const { code: minified } = transform({
-  filename: 'css-column-rule-style.css',
+  filename: 'column-rule-style.css',
   code: Buffer.from(source),
   minify: true,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-column-rule-style.min.css'), minified);
+fs.writeFileSync(path.join(distDir, 'column-rule-style.min.css'), minified);
 
 console.log('Build complete:');
-console.log(`  dist/css-column-rule-style.css     ${unminified.length} bytes`);
-console.log(`  dist/css-column-rule-style.min.css ${minified.length} bytes`);
+console.log(`  dist/column-rule-style.css     ${unminified.length} bytes`);
+console.log(`  dist/column-rule-style.min.css ${minified.length} bytes`);
