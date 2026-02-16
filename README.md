@@ -1,148 +1,112 @@
-# css-column-rule-style 1.0.6
+# css-column-rule-style
 
-Css module of single purpose classes for column rule style
+Functional CSS for column-rule-style
 
-#### Stats
+## Filesize
 
-446 | 44 | 132
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/column-rule-style.css` | 2301 bytes |
+| `dist/column-rule-style.min.css` | 1693 bytes (297 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-column-rule-style
-```
-
-Learn more about using css installed with npm:
-* https://webpack.github.io/docs/stylesheets.html
-* https://github.com/defunctzombie/npm-css
-
-#### With Git
-
-http:
-```
-git clone https://github.com/tachyons-css/css-column-rule-style
-```
-
-ssh:
-```
-git clone git@github.com:tachyons-css/css-column-rule-style.git
+```sh
+npm install css-column-rule-style
 ```
 
 ## Usage
 
-#### Using with [Postcss](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-column-rule-style";
 ```
 
-Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons path/to/css-file.css > dist/t.css
-```
-
-#### Using the css
-
-##### CDN
-The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
-
-```
-<link rel="stylesheet" href="http://unpkg.com/css-column-rule-style@1.0.6/css/css-column-rule-style.min.css" />
-```
-
-##### Locally
-The built css is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-column-rule-style">
+<link rel="stylesheet" href="https://unpkg.com/css-column-rule-style/dist/column-rule-style.min.css">
 ```
 
-#### Development
+### Direct
 
-The source css files can be found in the `src` directory.
-Running `$ npm start` will process the source css and place the built css in the `css` directory.
-
-## The css
-
-```css
-/*
-   COLUMN RULE STYLE
-*/
-.crs-n { -webkit-column-rule-style: none; -moz-column-rule-style: none; column-rule-style: none; }
-.crs-hid { -webkit-column-rule-style: hidden; -moz-column-rule-style: hidden; column-rule-style: hidden; }
-.crs-dot { -webkit-column-rule-style: dotted; -moz-column-rule-style: dotted; column-rule-style: dotted; }
-.crs-dash { -webkit-column-rule-style: dashed; -moz-column-rule-style: dashed; column-rule-style: dashed; }
-.crs-solid { -webkit-column-rule-style: solid; -moz-column-rule-style: solid; column-rule-style: solid; }
-.crs-double { -webkit-column-rule-style: double; -moz-column-rule-style: double; column-rule-style: double; }
-.crs-groove { -webkit-column-rule-style: groove; -moz-column-rule-style: groove; column-rule-style: groove; }
-.crs-ridge { -webkit-column-rule-style: ridge; -moz-column-rule-style: ridge; column-rule-style: ridge; }
-.crs-inset { -webkit-column-rule-style: inset; -moz-column-rule-style: inset; column-rule-style: inset; }
-.crs-outset { -webkit-column-rule-style: outset; -moz-column-rule-style: outset; column-rule-style: outset; }
-.crs-i { -webkit-column-rule-style: inherit; -moz-column-rule-style: inherit; column-rule-style: inherit; }
-@media screen and (min-width: 48em) {
- .crs-n-ns { -webkit-column-rule-style: none; -moz-column-rule-style: none; column-rule-style: none; }
- .crs-hid-ns { -webkit-column-rule-style: hidden; -moz-column-rule-style: hidden; column-rule-style: hidden; }
- .crs-dot-ns { -webkit-column-rule-style: dotted; -moz-column-rule-style: dotted; column-rule-style: dotted; }
- .crs-dash-ns { -webkit-column-rule-style: dashed; -moz-column-rule-style: dashed; column-rule-style: dashed; }
- .crs-solid-ns { -webkit-column-rule-style: solid; -moz-column-rule-style: solid; column-rule-style: solid; }
- .crs-double-ns { -webkit-column-rule-style: double; -moz-column-rule-style: double; column-rule-style: double; }
- .crs-groove-ns { -webkit-column-rule-style: groove; -moz-column-rule-style: groove; column-rule-style: groove; }
- .crs-ridge-ns { -webkit-column-rule-style: ridge; -moz-column-rule-style: ridge; column-rule-style: ridge; }
- .crs-inset-ns { -webkit-column-rule-style: inset; -moz-column-rule-style: inset; column-rule-style: inset; }
- .crs-outset-ns { -webkit-column-rule-style: outset; -moz-column-rule-style: outset; column-rule-style: outset; }
- .crs-i-ns { -webkit-column-rule-style: inherit; -moz-column-rule-style: inherit; column-rule-style: inherit; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .crs-n-m { -webkit-column-rule-style: none; -moz-column-rule-style: none; column-rule-style: none; }
- .crs-hid-m { -webkit-column-rule-style: hidden; -moz-column-rule-style: hidden; column-rule-style: hidden; }
- .crs-dot-m { -webkit-column-rule-style: dotted; -moz-column-rule-style: dotted; column-rule-style: dotted; }
- .crs-dash-m { -webkit-column-rule-style: dashed; -moz-column-rule-style: dashed; column-rule-style: dashed; }
- .crs-solid-m { -webkit-column-rule-style: solid; -moz-column-rule-style: solid; column-rule-style: solid; }
- .crs-double-m { -webkit-column-rule-style: double; -moz-column-rule-style: double; column-rule-style: double; }
- .crs-groove-m { -webkit-column-rule-style: groove; -moz-column-rule-style: groove; column-rule-style: groove; }
- .crs-ridge-m { -webkit-column-rule-style: ridge; -moz-column-rule-style: ridge; column-rule-style: ridge; }
- .crs-inset-m { -webkit-column-rule-style: inset; -moz-column-rule-style: inset; column-rule-style: inset; }
- .crs-outset-m { -webkit-column-rule-style: outset; -moz-column-rule-style: outset; column-rule-style: outset; }
- .crs-i-m { -webkit-column-rule-style: inherit; -moz-column-rule-style: inherit; column-rule-style: inherit; }
-}
-@media screen and (min-width: 64em) {
- .crs-n-l { -webkit-column-rule-style: none; -moz-column-rule-style: none; column-rule-style: none; }
- .crs-hid-l { -webkit-column-rule-style: hidden; -moz-column-rule-style: hidden; column-rule-style: hidden; }
- .crs-dot-l { -webkit-column-rule-style: dotted; -moz-column-rule-style: dotted; column-rule-style: dotted; }
- .crs-dash-l { -webkit-column-rule-style: dashed; -moz-column-rule-style: dashed; column-rule-style: dashed; }
- .crs-solid-l { -webkit-column-rule-style: solid; -moz-column-rule-style: solid; column-rule-style: solid; }
- .crs-double-l { -webkit-column-rule-style: double; -moz-column-rule-style: double; column-rule-style: double; }
- .crs-groove-l { -webkit-column-rule-style: groove; -moz-column-rule-style: groove; column-rule-style: groove; }
- .crs-ridge-l { -webkit-column-rule-style: ridge; -moz-column-rule-style: ridge; column-rule-style: ridge; }
- .crs-inset-l { -webkit-column-rule-style: inset; -moz-column-rule-style: inset; column-rule-style: inset; }
- .crs-outset-l { -webkit-column-rule-style: outset; -moz-column-rule-style: outset; column-rule-style: outset; }
- .crs-i-l { -webkit-column-rule-style: inherit; -moz-column-rule-style: inherit; column-rule-style: inherit; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-column-rule-style/dist/column-rule-style.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.crs-n` | `column-rule-style: none;` |
+| `.crs-hid` | `column-rule-style: hidden;` |
+| `.crs-dot` | `column-rule-style: dotted;` |
+| `.crs-dash` | `column-rule-style: dashed;` |
+| `.crs-solid` | `column-rule-style: solid;` |
+| `.crs-double` | `column-rule-style: double;` |
+| `.crs-groove` | `column-rule-style: groove;` |
+| `.crs-ridge` | `column-rule-style: ridge;` |
+| `.crs-inset` | `column-rule-style: inset;` |
+| `.crs-outset` | `column-rule-style: outset;` |
+| `.crs-i` | `column-rule-style: inherit;` |
+| `.crs-n-s` | `column-rule-style: none;` |
+| `.crs-hid-s` | `column-rule-style: hidden;` |
+| `.crs-dot-s` | `column-rule-style: dotted;` |
+| `.crs-dash-s` | `column-rule-style: dashed;` |
+| `.crs-solid-s` | `column-rule-style: solid;` |
+| `.crs-double-s` | `column-rule-style: double;` |
+| `.crs-groove-s` | `column-rule-style: groove;` |
+| `.crs-ridge-s` | `column-rule-style: ridge;` |
+| `.crs-inset-s` | `column-rule-style: inset;` |
+| `.crs-outset-s` | `column-rule-style: outset;` |
+| `.crs-i-s` | `column-rule-style: inherit;` |
+| `.crs-n-m` | `column-rule-style: none;` |
+| `.crs-hid-m` | `column-rule-style: hidden;` |
+| `.crs-dot-m` | `column-rule-style: dotted;` |
+| `.crs-dash-m` | `column-rule-style: dashed;` |
+| `.crs-solid-m` | `column-rule-style: solid;` |
+| `.crs-double-m` | `column-rule-style: double;` |
+| `.crs-groove-m` | `column-rule-style: groove;` |
+| `.crs-ridge-m` | `column-rule-style: ridge;` |
+| `.crs-inset-m` | `column-rule-style: inset;` |
+| `.crs-outset-m` | `column-rule-style: outset;` |
+| `.crs-i-m` | `column-rule-style: inherit;` |
+| `.crs-n-l` | `column-rule-style: none;` |
+| `.crs-hid-l` | `column-rule-style: hidden;` |
+| `.crs-dot-l` | `column-rule-style: dotted;` |
+| `.crs-dash-l` | `column-rule-style: dashed;` |
+| `.crs-solid-l` | `column-rule-style: solid;` |
+| `.crs-double-l` | `column-rule-style: double;` |
+| `.crs-groove-l` | `column-rule-style: groove;` |
+| `.crs-ridge-l` | `column-rule-style: ridge;` |
+| `.crs-inset-l` | `column-rule-style: inset;` |
+| `.crs-outset-l` | `column-rule-style: outset;` |
+| `.crs-i-l` | `column-rule-style: inherit;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.crs-n-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/column-rule-style.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/column-rule-style.css` — formatted
+- `dist/column-rule-style.min.css` — minified
 
 ## License
 
-ISC
-
+MIT
